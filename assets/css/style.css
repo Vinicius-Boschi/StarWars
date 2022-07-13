@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    display: flex;
+}
+
 .lateral-menu {
     background: #000;
     color: #FFF;
@@ -32,4 +36,68 @@ body {
 
 .settings-photo{
     margin-right: .6rem;
+}
+
+.content {
+    background-color: #F5F6FA;
+    width: 100%;
+}
+
+.card {
+    background-color: #FFF;
+    box-shadow: 0px 5px 10px -7px #000000;
+    border-radius: 1rem;
+    margin: 0 1.2rem;
+    height: 132px;
+}
+
+.card-small {
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.card-large {
+    width: 464px;
+}
+
+.card .card-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.card-photo {
+    width: 58px;
+}
+
+.card .card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.cards-header {
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+} 
+
+.card-info h2 {
+    font-size: 3.3rem;
+    font-weight: bold;
+    color: #FFBA33;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-large .card-container .card-content:first-child {
+    border-right: 1px solid #111;
 }
