@@ -101,3 +101,50 @@ body {
 .card-large .card-container .card-content:first-child {
     border-right: 1px solid #111;
 }
+
+.table {
+    width: 642px;
+    height: 310px;
+    padding: 2rem;
+    margin: 2.5rem;
+    background-color: #FFF;
+    box-shadow: 0px 5px 10px -7px #000000;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.table table {
+    width: 100%;
+    margin: 1.2rem;
+}
+
+.table table th {
+    border-bottom: 1px solid #5E5E5E;
+    padding: .6rem 0;
+}
+
+.table table td {
+    border-bottom: 1px solid #E9E9E9;
+    padding: .6rem 0;
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+.content-ifo {
+    display: flex;
+    align-items: center;
+}
+
+.chart {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 375px;
+    background-color: #FFF;
+    box-shadow: 0px 5px 10px -7px #000000;
+    border-radius: 1rem;
+}

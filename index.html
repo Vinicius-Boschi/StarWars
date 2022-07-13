@@ -44,44 +44,66 @@
                     <div class="card-content">
                         <div class="card-info">
                             <p>Personagens</p>
-                            <h2>10</h2>
+                            <h2 id="characters"></h2>
                         </div>
                         <img class="card-photo" src="assets/img/personagens-black.svg" alt="Personagens">
                     </div>
                 </div>
-    
                 <div class="card card-large">
                     <div class="card-container">
                         <div class="card-content">
                             <div class="card-info">
                                 <p>Luas</p>
-                                <h2>8</h2>
+                                <h2 id="moons"></h2>
                             </div>
                             <img class="card-photo" src="assets/img/luas-black.svg" alt="luas">
                         </div>
                         <div class="card-content">
                             <div class="card-info">
                                 <p>Planetas</p>
-                                <h2>2</h2>
+                                <h2 id="planets"></h2>
                             </div>
                             <img class="card-photo" src="assets/img/planetas-black.svg" alt="planetas">
                         </div>
                     </div>
                 </div>
-    
                 <div class="card card-small">
                     <div class="card-content">
                         <div class="card-info">
                             <p>Naves</p>
-                            <h2>22</h2>
+                            <h2 id="ships"></h2>
                         </div>
                         <img class="card-photo" src="assets/img/nave-black.svg" alt="naves">
                     </div>
                 </div>
             </div>
+            <div class="content-ifo">
+                <div class="table">
+                    <table id="filmsTable">
+                        <h5>Últimos filmes</h5>
+                        <p>Saiba os últimos lançamentos da marca.</p>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Estreia</th>
+                                <th>Diretor</th>
+                                <th>Episódio</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="chart">
+                    <div id="piechart" style="width: 400px; height: 200px;"></div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="assets/js/script.js"></script>
     
 </body>
