@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F6FA;
 }
 
 .container {
@@ -39,7 +40,6 @@ body {
 }
 
 .content {
-    background-color: #F5F6FA;
     width: 100%;
 }
 
@@ -103,8 +103,7 @@ body {
 }
 
 .table {
-    width: 642px;
-    height: 310px;
+    width: 100%;
     padding: 2rem;
     margin: 2.5rem;
     background-color: #FFF;
@@ -115,17 +114,23 @@ body {
 
 .table table {
     width: 100%;
-    margin: 1.2rem;
+    margin-top: 1.2rem;
 }
 
-.table table th {
+.table thead {
+    background: black;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.table tbody tr:nth-child(2n) {
+    background: #ccc;
+}
+
+.table th, .table td {
     border-bottom: 1px solid #5E5E5E;
-    padding: .6rem 0;
-}
-
-.table table td {
-    border-bottom: 1px solid #E9E9E9;
-    padding: .6rem 0;
+    border-right: 1px solid #111;
+    padding: .6rem;
 }
 
 h5 {
@@ -134,17 +139,66 @@ h5 {
     margin-bottom: .6rem;
 }
 
-.content-ifo {
+.content-info {
     display: flex;
     align-items: center;
 }
 
-.chart {
-    display: flex;
-    align-items: center;
-    width: 400px;
-    height: 375px;
-    background-color: #FFF;
-    box-shadow: 0px 5px 10px -7px #000000;
-    border-radius: 1rem;
+@media screen and (max-width: 900px) {
+
+    .lateral-menu {
+        width: 130px;
+        height: 170vh;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .settings {
+        flex-direction: column;
+    }
+
+    .content {
+        width: auto;
+    }
+
+    .card {
+        margin: 0 0 1rem 0;
+    }
+
+    .cards-header {
+        display: inherit;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .card-large {
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tbody td {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table th, .table td {
+        border-right: none;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .table table {
+        width: 85%;
+    }
 }
