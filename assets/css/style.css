@@ -12,8 +12,7 @@ body {
 .lateral-menu {
     background: #000;
     color: #FFF;
-    width: 250px;
-    height: 100vh;
+    height: 55vw;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -147,12 +146,11 @@ h5 {
 @media screen and (max-width: 900px) {
 
     .lateral-menu {
-        width: 130px;
-        height: 170vh;
+        height: auto;
     }
 
     .logo {
-        width: 60%;
+        width: 100%;
     }
 
     .settings {
@@ -197,8 +195,17 @@ h5 {
     }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-    .table table {
-        width: 85%;
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .lateral-menu {
+        height: auto;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .cards-header {
+        width: 100%;
     }
 }
