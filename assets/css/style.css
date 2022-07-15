@@ -143,6 +143,15 @@ h5 {
     align-items: center;
 }
 
+footer {
+    background-color: gray;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 @media screen and (max-width: 900px) {
 
     .lateral-menu {
@@ -178,7 +187,6 @@ h5 {
     .table {
         width: 100%;
         height: auto;
-        margin: 0 auto;
     }
 
     .table thead {
