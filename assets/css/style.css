@@ -102,6 +102,8 @@ body {
 }
 
 .table {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 2rem;
     margin: 2.5rem;
@@ -130,6 +132,11 @@ body {
     border-bottom: 1px solid #5E5E5E;
     border-right: 1px solid #111;
     padding: .6rem;
+}
+
+.tableImg {
+    width: 30%;
+    align-self: center;
 }
 
 h5 {
