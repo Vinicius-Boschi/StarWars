@@ -17,7 +17,6 @@ async function table() {
             </tr>`
         )
     })
-    console.log(tableData)
 }
 
 function swapiGet(param) {
