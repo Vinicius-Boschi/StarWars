@@ -6,59 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/character.css">
     <title>Star Wars</title>
 </head>
 <body>
 
-    <div class="container">
-        <div class="lateral-menu"   >
-            <img class="logo" src="assets/img/logo.png" alt="logo star wars">
-            <div class="menu-itens">
-                <ul class="lists">
-                    <li class="list">
-                        <a href="index.html">
-                            <img src="assets/img/dashboard.svg" alt="dashboard">
+    <header class="header">
+        <navbar class="navbar">
+            <div class="imageNav">
+                <img src="assets/img/logo.png" alt="logo" class="img">
+                <button class="button" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="links-container">
+                <ul class="list">
+                    <li class="lists">
+                        <a class="link" href="index.html">
+                            <img src="assets/img/dashboard.svg" alt="dashboard" class="img-links">
+                            <p class="text-link">Dashboard</p>
                         </a>
-                        <p>Dashboard</p>
                     </li>
-                    <li class="list">
-                        <img src="assets/img/personagens.svg" alt="dashboard">
-                        <p>Characters</p>
+                    <li class="lists">
+                        <a class="link active" href="characters.html">
+                            <img src="assets/img/personagens.svg" alt="personagens" class="img-links">
+                            <p class="text-link">Characters</p>
+                        </a>
                     </li>
-                    <li class="list">
-                        <img src="assets/img/planetas.svg" alt="dashboard">
-                        <p>Planets e moons</p>
+                    <li class="lists">
+                        <a class="link" href="#">
+                            <img src="assets/img/planetas.svg" alt="planetas" class="img-links">
+                            <p class="text-link">Planets</p>
+                        </a>
                     </li>
-                    <li class="list">
-                        <img src="assets/img/nave.svg" alt="dashboard">
-                        <p>Ships</p>
+                    <li class="lists">
+                        <a class="link" href="#">
+                            <img src="assets/img/nave.svg" alt="nave" class="img-links">
+                            <p class="text-link">Ships</p>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="settings">
-                <img class="settings-photo" src="assets/img/settings.svg" alt="configuração">
-                <p>Configuration</p>
-            </div>
-        </div>
+        </navbar>
+    </header>
+
+    <div class="container">
         <div class="content">
             <div class="content-info">
                 <div class="table">
-                    <img class="tableImg" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/06/17/mark-hamill.png" alt="Luke Skywalker">
-                    <table id="filmsTable">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Height</th>
-                                <th>Mass</th>
-                                <th>Hair</th>
-                                <th>Skin</th>
-                                <th>Eye</th>
-                                <th>Birthday</th>
-                                <th>Gender</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
+                    <section id="charactersSection"></section>
                 </div>
             </div>
         </div>
@@ -68,9 +64,11 @@
         <h1>2022 - Star Wars</h1>
     </footer>
 
+    <script src="https://kit.fontawesome.com/131a4c7b84.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="assets/js/characters.js"></script>
+    <script src="assets/js/navbar.js"></script>
     
 </body>
 </html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+#charactersSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cardContainer {
+    margin: 1rem;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cardCharacter {
+    background: #504E4D;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 18rem;
+}
+
+.cardCharacter > h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.imageContainer img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+    border-radius: 12px;
+}
+
+.infoContainer > h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.infoContent {
+    align-self: baseline;
+    margin: 1rem;
+}
+
+.infoContainer h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 375px) and (max-width: 540px) {
+    #charactersSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardContainer {
+        margin: .5rem;
+    }
+
+    .cardCharacter {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width:  1200px) {
+    #charactersSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .cardContainer {
+        margin: .5rem;
+    }
+
+    .cardCharacter {
+        width: 75%;
+    }
+
+    .table {
+        padding: 1rem;
+    }
+}

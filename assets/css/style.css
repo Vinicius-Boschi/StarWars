@@ -5,37 +5,92 @@ body {
     background-color: #F5F6FA;
 }
 
+.header {
+    width: 100%;
+    background-color: #000;
+}
+
+.navbar {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.imageNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    height: 100px;
+}
+
+.button {
+    display: none;
+    float: right;
+    background: none;
+    border: 0;
+    color: #EAE135;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.links-container {
+    transition: all .3s linear;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    padding: 2rem;
+    align-items: baseline;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s linear;
+    font-weight: bold;
+    color: #E7E8E9;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #EAE135;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.img-links {
+    padding: 1rem;
+}
+
+.active {
+    color: #EAE135;
+}
+
 .container {
     display: flex;
-}
-
-.lateral-menu {
-    background: #000;
-    color: #FFF;
-    height: 55vw;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.lists, .list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-    line-height: 2.5;
-}
-
-.settings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.settings-photo{
-    margin-right: .6rem;
 }
 
 .content {
@@ -159,22 +214,14 @@ footer {
     color: white;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 375px) and (max-width: 720px) {
 
-    .lateral-menu {
-        height: auto;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .settings {
-        flex-direction: column;
+    .button {
+        display: block;
     }
 
     .content {
-        width: auto;
+        width: 72%;
     }
 
     .card {
@@ -194,6 +241,7 @@ footer {
     .table {
         width: 100%;
         height: auto;
+        margin: 2rem;
     }
 
     .table thead {
@@ -208,12 +256,35 @@ footer {
     .table th, .table td {
         border-right: none;
     }
+
+    .navbar {
+        display: block;
+    }
+
+    .links-container {
+        overflow: hidden;
+        height: 0;
+    }
+
+    .list {
+        display: block;
+        float: left;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-links {
+        width: 20%;
+    }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 721px) and (max-width:  1200px) {
 
-    .lateral-menu {
-        height: auto;
+    .button {
+        display: block;
     }
 
     .content {
@@ -222,5 +293,28 @@ footer {
 
     .cards-header {
         width: 100%;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .links-container {
+        overflow: hidden;
+        height: 0;
+    }
+
+    .list {
+        display: block;
+        float: left;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-links {
+        width: 20%;
     }
 }
