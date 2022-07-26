@@ -12,3 +12,5 @@ button.addEventListener("click", () => {
         container.style.height = 0
     }
 })
+
+export { button }

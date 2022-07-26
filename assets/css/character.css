@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-#charactersSection {
+.charactersSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -8,7 +8,6 @@
 .cardContainer {
     margin: 1rem;
     justify-items: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 .cardCharacter {
@@ -16,6 +15,7 @@
     border-radius: 12px;
     padding: 1.5rem;
     width: 18rem;
+    height: 95%;
 }
 
 .cardCharacter > h1 {
@@ -39,30 +39,46 @@
 .infoContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: #FFF;
+    background: rgb(40, 39, 39);
     border-radius: 12px;
+    height: 60%;
 }
 
-.infoContainer > h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-.infoContent {
-    align-self: baseline;
-    margin: 1rem;
-}
-
-.infoContainer h3 {
+.infoContainer p {
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
-    font-weight: 400;
+    margin-left: 1rem;
+    color: rgb(158, 79, 96);
+    text-transform: capitalize;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0rem 1rem 1rem;
+    color: #FFF;
+}
+
+.text {
+    font-size: .7rem;
+}
+
+.loadButton {
+    background: #000;
+    color: #FFF;
+    width: 10%;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 375px) and (max-width: 540px) {
-    #charactersSection {
+    .charactersSection {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -76,7 +92,7 @@
 }
 
 @media screen and (min-width: 541px) and (max-width:  1200px) {
-    #charactersSection {
+    .charactersSection {
         grid-template-columns: repeat(1, 1fr);
     }
 
