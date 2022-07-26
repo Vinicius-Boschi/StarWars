@@ -6,7 +6,7 @@
 Treinar requisição da api do Star Wars(swapi api) usando o Axios.
   
 # <h3> :pencil: Dashboard</h3>  
-![home](https://user-images.githubusercontent.com/74377158/179295968-c31b6313-d89c-45b5-9e29-e10a2a382c1a.jpg)
+![home](https://user-images.githubusercontent.com/74377158/181092726-cf0b5406-1326-4b00-8212-66be228aff16.jpg)
 
 # <h3> :file_folder: Acessar o projeto</h3>
 Acesse o projeto clicando neste [link](https://dashboardstarwars.netlify.app/)
