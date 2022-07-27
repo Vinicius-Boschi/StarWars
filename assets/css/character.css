@@ -2,66 +2,46 @@
 
 .charactersSection {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .cardContainer {
-    margin: 1rem;
-    justify-items: center;
-}
-
-.cardCharacter {
-    background: #504E4D;
-    border-radius: 12px;
-    padding: 1.5rem;
-    width: 18rem;
-    height: 95%;
-}
-
-.cardCharacter > h1 {
-    color: white;
-    font-size: 20px;
-}
-
-.imageContainer {
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 1rem;
+    box-shadow: 0px 5px 10px -7px #000000;
+    
 }
 
-.imageContainer img {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 1rem;
-    border: 2px solid white;
+.cardContainer img {
+    width: 50%;
+    height: auto;
+    border-right: 2px solid rgb(158, 79, 96);
+    border-radius: 1rem 0 0 1rem;
 }
 
-.infoContainer {
-    display: flex;
-    flex-direction: column;
-    background: rgb(40, 39, 39);
-    border-radius: 12px;
-    height: 60%;
+.infoAbout {
+    background-image: url(https://static-mh.content.disney.io/starwars/assets/shared/bg_hash@2x-bd5b31294ea9.png);
+    background-repeat: repeat-x;
+    padding: 1.2rem;
+    background-color: rgb(40, 39, 39);
+    line-height: 1.5;
+    width: 26vw;
 }
 
-.infoContainer p {
-    font-size: 0.7rem;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
+.infoAbout p {
     color: rgb(158, 79, 96);
     text-transform: capitalize;
 }
 
-.title {
+h1 {
+    font-size: 20px;
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 1rem 0rem 1rem 1rem;
-    color: #FFF;
 }
 
-.text {
-    font-size: .7rem;
+.title {
+    margin-top: 1.7rem;
+    text-transform: capitalize;
 }
 
 .loadButton {
@@ -81,14 +61,6 @@
     .charactersSection {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .cardContainer {
-        margin: .5rem;
-    }
-
-    .cardCharacter {
-        width: 75%;
-    }
 }
 
 @media screen and (min-width: 541px) and (max-width:  1200px) {
@@ -98,14 +70,6 @@
 
     .container {
         justify-content: center;
-    }
-
-    .cardContainer {
-        margin: .5rem;
-    }
-
-    .cardCharacter {
-        width: 75%;
     }
 
     .table {

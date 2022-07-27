@@ -206,13 +206,17 @@ h5 {
 }
 
 footer {
-    background-color: gray;
-    height: 3rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: white;
+    background-color: #000;
+    height: 10rem;
+    text-align: center;
+    background-image: url(https://static-mh.content.disney.io/starwars/assets/footer/vader_2-86e8fdb4e26d.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
 }
+
+    
 
 @media screen and (min-width: 375px) and (max-width: 720px) {
 

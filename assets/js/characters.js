@@ -10,41 +10,33 @@ async function table(id) {
       $('.charactersSection').append (
         `
         <div class="cardContainer">
-          <div class='cardCharacter'>
-            <h1>${people.name}</h1>
-            <div class='imageContainer'>
-              <img src='https://starwars-visualguide.com/assets/img/characters/${people.id}.jpg' alt='${people.name}'>
-            </div>
-            <div class='infoContainer'>
-              <div class='infoAbout'>
-                <h2 class='title'>About:</h2>
-                <p>Height: ${people.height + ' m'}</p>
-                <p>Mass: ${people.mass + ' kg'}</p>
-                <p>Hair: ${people.hairColor}</p>
-                <p>Skin: ${people.skinColor}</p>
-                <p>Eye: ${people.eyeColor}</p>
-                <p>Birth: ${people.born + 'BBY'} ${people.bornLocation}</p>
-                <p>Died: ${people.died + 'BBY'} ${people.diedLocation}</p>
-                <p>Gender: ${people.gender}</p>
-              </div>
-              <div class='affiliations'>  
-                <h2 class='title'>Affiliations</h2>
-                <p class='text'>${people.affiliations}</p>
-              </div>
+          <img src='https://starwars-visualguide.com/assets/img/characters/${people.id}.jpg' alt='${people.name}'>
+            <div class='infoAbout'>
+              <h1>${people.name||"without informations"}</h1>
+              <h2 class='title'>about</h2>
+              <p>Height: ${people.height||"without informations"}</p>
+              <p>Mass: ${people.mass||"without informations"}</p>
+              <p>Hair: ${people.hairColor||"without informations"}</p>
+              <p>Skin: ${people.skinColor||"without informations"}</p>
+              <p>Eye: ${people.eyeColor||"without informations"}</p>
+              <p>Born: ${people.born||"without informations"}</p>
+              <p>Died: ${people.died||"without informations"}</p>
+              <p>Gender: ${people.gender||"without informations"}</p>
               <div class='masters'>  
                 <h2 class='title'>masters</h2>
-                <p class='text'>${people.masters}</p>
+                <p class='text'>${people.masters||"without informations"}</p>
               </div>
               <div class='apprentices'>  
                 <h2 class='title'>apprentices</h2>
-                <p class='text'>${people.apprentices}</p>
+                <p class='text'>${people.apprentices||"without informations"}</p>
               </div>  
               <div class='locations'>  
                 <h2 class='title'>homeworld</h2>
-                <p class='text'>${people.homeworld}</p>
+                <p class='text'>${people.bornLocation||"without informations"}</p>
+                <p class='text'> ${people.diedLocation||"without informations"}</p>
+                <p class='text'>${people.homeworld||"without informations"}</p>
               </div> 
             </div>
-          </div>
         </div>
         `
       )
