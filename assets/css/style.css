@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(40, 39, 39);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EAE135;
+    border-radius: 30px;
+    visibility: visible;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(21, 21, 21);
@@ -208,9 +223,10 @@ h5 {
 footer {
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #FFF;
     background-color: #000;
     height: 10rem;
-    text-align: center;
     background-image: url(https://static-mh.content.disney.io/starwars/assets/footer/vader_2-86e8fdb4e26d.jpg);
     background-position: center top;
     background-repeat: no-repeat;
