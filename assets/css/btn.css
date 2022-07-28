@@ -1,0 +1,27 @@
+.btn {
+    display: grid;
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: blue;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: .5rem;
+    color: #FFF;
+    visibility: hidden;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #EAEA;
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}

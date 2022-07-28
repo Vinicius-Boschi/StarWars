@@ -44,19 +44,6 @@ h1 {
     text-transform: capitalize;
 }
 
-.loadButton {
-    background: #000;
-    color: #FFF;
-    width: 10%;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    padding: 1rem;
-    cursor: pointer;
-}
-
 @media screen and (min-width: 375px) and (max-width: 480px) {
     .charactersSection {
         grid-template-columns: repeat(1, 1fr);

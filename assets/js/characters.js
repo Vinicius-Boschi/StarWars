@@ -4,7 +4,8 @@ table()
 
 async function table(id) {
   const response = await swapiGet(`id/${id}.json`)
-  const tableData = response.data
+  let tableData = ''
+  tableData = response.data
 
   tableData.forEach(function(people) {
       $('.charactersSection').append (
@@ -46,3 +47,14 @@ async function table(id) {
 function swapiGet() {
   return axios.get("https://akabab.github.io/starwars-api/api/all.json")
 }
+
+window.addEventListener("scroll", function() {
+  const btn = document.querySelector(".btn")
+  const scrollHeight = window.pageYOffset 
+
+  if (scrollHeight >= 500) { 
+    btn.classList.add('show')
+  } else { 
+    btn.classList.remove('show')
+  }
+})

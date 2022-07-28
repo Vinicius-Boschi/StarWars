@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import './reset.css';
+@import './character.css';
+@import './btn.css';
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -13,6 +16,10 @@
     background: #EAE135;
     border-radius: 30px;
     visibility: visible;
+}
+
+* {
+    scroll-behavior: smooth;
 }
 
 body {
